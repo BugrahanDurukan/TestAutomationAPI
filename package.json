@@ -1,0 +1,24 @@
+{
+  "name": "testautomationapi",
+  "version": "1.0.0",
+  "description": "3rd Challenge that was given to me",
+  "main": "TesAutomationAPI.js",
+  "scripts": {
+    "test": "set NODE_ENV=test&&mocha --timeout 30000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BugrahanDurukan/TestAutomationAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BugrahanDurukan/TestAutomationAPI/issues"
+  },
+  "homepage": "https://github.com/BugrahanDurukan/TestAutomationAPI#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.2.0"
+  }
+}
