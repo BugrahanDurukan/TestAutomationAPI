@@ -13,10 +13,10 @@ describe("Test for an endpoint that returns all the groceries", () => {
       .request("https://app.swaggerhub.com/apis/Grocery4/GroceryStore/1.0.0")
       .get("/allGrocery")
       .end((err, response) => {
-        //response.body.should.have.property("id").which.is.a("number");
-        //response.body.should.have.property("name").which.is.an("array");
-        //response.body.should.have.property("price").which.is.a("float");
-        //response.body.should.have.property("stock").which.is.a("number");
+        response.body.should.have.property("id").which.is.a("number");
+        response.body.should.have.property("name").which.is.an("array");
+        response.body.should.have.property("price").which.is.a("float");
+        response.body.should.have.property("stock").which.is.a("number");
         response.status.should.equal(200);
         done();
       });
@@ -24,7 +24,7 @@ describe("Test for an endpoint that returns all the groceries", () => {
   it("should return Method not allowed", (done) => {
     chai
       .request("https://app.swaggerhub.com/apis/Grocery4/GroceryStore/1.0.0")
-      .post("/allGrocery")
+      .post("/allGrocery") //wrong http protocol
       .end((err, response) => {
         response.status.should.equal(405);
         done();
