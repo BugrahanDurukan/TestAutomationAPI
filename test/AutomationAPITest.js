@@ -4,7 +4,7 @@ const chaiHttp = require("chai-http");
 chai.use(chaiHttp);
 chai.should();
 
-//!!! The mock service has been terminated !!!
+//!!! The mock service has been terminated due to my free subscription ending !!!
 //So the tests are expected to fail
 
 describe("Test for an endpoint that returns all the groceries", () => {
